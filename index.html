@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Professionele BIAB nagelservice - Verzorgde nagels met hoogwaardige kwaliteit. Bekijk onze prijzen en boek direct.">
-  <title>BIAB Nagelservice</title>
+  <meta name="description" content="BIAB nagels - Luxe nagelstudio met een breed scala aan diensten. Ontdek onze prijzen, services en klantbeoordelingen.">
+  <title>BIAB Nagels | Luxe Nagelstudio</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -13,9 +14,11 @@
       <h1>BIAB Nagels</h1>
       <nav>
         <ul>
+          <li><a href="#home">Home</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#prices">Prijzen</a></li>
-          <li><a href="#about">Over Ons</a></li>
+          <li><a href="#gallery">Galerij</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -23,31 +26,36 @@
   </header>
 
   <main>
-    <section id="hero">
-      <h2>Perfecte BIAB Nagels voor elke gelegenheid</h2>
-      <p>Hoogwaardige kwaliteit en persoonlijke service.</p>
-      <a href="#contact" class="btn">Boek Nu</a>
+    <section id="home">
+      <div class="hero">
+        <h2>Transformeer jouw nagels met stijl</h2>
+        <p>Luxe behandelingen voor een zelfverzekerde uitstraling.</p>
+        <a href="#contact" class="btn-primary">Maak een afspraak</a>
+      </div>
     </section>
 
-    <section id="services">
+    <section id="services" class="section">
       <h2>Onze Services</h2>
-      <div class="services-container">
+      <div class="services-grid">
         <div class="service">
+          <img src="images/biab.jpg" alt="BIAB Nagels">
           <h3>BIAB Behandeling</h3>
-          <p>Versteviging van natuurlijke nagels met BIAB.</p>
+          <p>De perfecte versteviging voor je natuurlijke nagels.</p>
         </div>
         <div class="service">
+          <img src="images/gelnails.jpg" alt="Gelnagels">
           <h3>Gelnagels</h3>
-          <p>Mooie gelnagels met een duurzame afwerking.</p>
+          <p>Stijlvolle nagels met een langdurige afwerking.</p>
         </div>
         <div class="service">
+          <img src="images/manicure.jpg" alt="Manicure">
           <h3>Manicure</h3>
-          <p>Professionele verzorging van je handen en nagels.</p>
+          <p>Complete verzorging voor jouw handen en nagels.</p>
         </div>
       </div>
     </section>
 
-    <section id="prices">
+    <section id="prices" class="section">
       <h2>Prijzen</h2>
       <table>
         <tr>
@@ -69,12 +77,31 @@
       </table>
     </section>
 
-    <section id="about">
-      <h2>Over Ons</h2>
-      <p>Wij zijn gespecialiseerd in BIAB nagelbehandelingen en bieden persoonlijke aandacht voor jouw unieke stijl. Met hoogwaardige producten en een passie voor nagelverzorging zorgen we dat jouw nagels altijd stralen.</p>
+    <section id="gallery" class="section">
+      <h2>Galerij</h2>
+      <div class="gallery-grid">
+        <img src="images/nail1.jpg" alt="Nail Design 1">
+        <img src="images/nail2.jpg" alt="Nail Design 2">
+        <img src="images/nail3.jpg" alt="Nail Design 3">
+        <img src="images/nail4.jpg" alt="Nail Design 4">
+      </div>
     </section>
 
-    <section id="contact">
+    <section id="testimonials" class="section">
+      <h2>Wat onze klanten zeggen</h2>
+      <div class="testimonials">
+        <blockquote>
+          <p>"Geweldige service! Mijn nagels hebben nog nooit zo mooi geleken."</p>
+          <cite>- Sarah J.</cite>
+        </blockquote>
+        <blockquote>
+          <p>"BIAB Nagels is mijn favoriete plek voor nagelbehandelingen."</p>
+          <cite>- Lisa M.</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
       <h2>Contact</h2>
       <form id="contactForm">
         <input type="text" name="name" placeholder="Naam" required>

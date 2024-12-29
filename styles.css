@@ -1,91 +1,101 @@
+/* Algemene stijl */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    color: #333;
   }
   
   header {
-    background: #f4a9c6;
-    color: white;
-    padding: 1em 0;
+    background: #f8bfc5;
+    color: #fff;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
   }
   
   header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
   }
   
   header ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
+    list-style: none;
   }
   
   header ul li {
-    margin: 0 10px;
+    margin-left: 20px;
   }
   
   header ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
   }
   
-  #hero {
+  header ul li a:hover {
+    color: #ffebee;
+  }
+  
+  .hero {
+    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
     text-align: center;
-    background: #ffe6f0;
-    padding: 2em 0;
+    padding: 100px 20px;
   }
   
-  #hero h2 {
-    margin: 0;
+  .hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
   }
   
-  #hero .btn {
-    background: #f4a9c6;
-    color: white;
+  .hero .btn-primary {
+    background: #f8bfc5;
+    color: #fff;
     padding: 10px 20px;
+    border: none;
     text-decoration: none;
+    font-weight: 600;
     border-radius: 5px;
-    display: inline-block;
-    margin-top: 10px;
+    transition: background 0.3s;
   }
   
-  section {
-    padding: 2em 0;
+  .hero .btn-primary:hover {
+    background: #e89aa2;
   }
   
-  .services-container {
-    display: flex;
-    justify-content: space-between;
+  .section {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .services-grid, .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
   }
   
-  .service {
-    background: #f9f9f9;
-    padding: 1em;
+  .service, .testimonials blockquote {
+    background: #fefefe;
+    padding: 20px;
+    border: 1px solid #eee;
     border-radius: 5px;
     text-align: center;
-    flex: 1;
-  }
-  
-  table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  table th, table td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: left;
   }
   
   footer {
     text-align: center;
-    padding: 1em 0;
-    background: #f4a9c6;
+    background: #f8bfc5;
     color: white;
+    padding: 20px 0;
   }
   
